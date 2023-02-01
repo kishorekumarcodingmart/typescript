@@ -15,3 +15,16 @@ let obj : userDetails = {
     age : 21,
     isVerified : true
 }
+
+type X = {
+    fname : string
+}
+
+type Y = X & {
+    lname : string
+}
+
+let newObj : Y =  {
+    fname : "Kishore",
+    lname : "Kumar"
+}
